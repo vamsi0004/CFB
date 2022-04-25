@@ -1,0 +1,9 @@
+a=20
+name="mahesh"
+_b='v'
+a1=None
+print(a)
+print(name)
+print(_b)
+print(a1)
+2+3
