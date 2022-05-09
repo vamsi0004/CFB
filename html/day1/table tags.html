@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+
+    <style>  
+        table, th, td {  
+          border: 1px solid black;  
+          border-collapse: collapse;  
+        }  
+        th, td {  
+          padding: 10px;  
+        }  
+        table#alter tr:nth-child(even) {  
+          background-color: #eee;  
+        }  
+        table#alter tr:nth-child(odd) {  
+          background-color: #fff;  
+        }  
+        table#alter th {  
+          color: white;  
+          background-color: gray;  
+        }  
+        </style> 
+
+
+</head>
+<body>
+    <p>table without border</p>
+    <table>
+        <th>sn0</th>
+        <th>name</th>
+        <th>phone no</th>
+        <tr><td>1</td>
+        <td>mahesh</td>
+        <td>951368741</td>
+        <tr><td>2</td>
+            <td>balaji</td>
+            <td>25963214</td>
+            <tr><td>3</td>
+        <td>girish</td>
+        <td>987463214</td>
+        <tr><td>4</td>
+            <td>vyshu</td>
+            <td>6541236984</td>
+        </tr>
+    </table>
+
+    <p>table with border</p>
+
+    <table border="solid_black">
+        <th>sn0</th>
+        <th>name</th>
+        <th>phone no</th>
+        <tr><td>1</td>
+        <td>mahesh</td>
+        <td>951368741</td>
+        <tr><td>2</td>
+            <td>balaji</td>
+            <td>25963214</td>
+            <tr><td>3</td>
+        <td>girish</td>
+        <td>987463214</td>
+        <tr><td>4</td>
+            <td>vyshu</td>
+            <td>6541236984</td>
+        </tr>
+    </table><br><br>
+
+    <p>colspaning </p>
+
+    <table border="1">
+        <th>
+            sno 
+        </th>
+        <th>name</th>
+        <th colspan="2">phone no</th>
+        <tr>
+            <td>1</td>
+            <td>mahesh</td>
+            <td>9874563214</td>
+            <td>96325874121</td>
+        </tr>
+    </table>
+
+    <p>row spanning</p>
+
+    <table border="1">
+        <th>sno</th>
+        <th>name</th>
+        <th>phone</th>
+        <tr>
+            <td>01</td>
+            <td>mahesh</td>
+            <td rowspan="2"> 321469874</td>
+        </tr>
+        <tr><td>02</td>
+            <td>balaji</td>
+            </tr>
+    </table>
+
+    <p>table with both row spanning and colspanning table colors</p>
+    <tbody>
+    <table border="1" background_color="#eee" id="alter">
+        <th>sno</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <tr>
+            <td>1</td>
+            <td>c-lang</td>
+            <td>python</td>
+            <td>html</td>
+            <td rowspan="6">lunch</td>
+            <td>maths-1</td>
+            <td>english</td>
+            <td>library</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>java</td>
+            <td>english</td>
+            <td>library</td>
+        
+            <td>c-lang</td>
+            <td colspan="2">python lab</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>phy</td>
+            <td>chemistry</td>
+            <td>c-lang</td>
+        
+            <td colspan="2">java lab</td>
+            <td>drawing</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>web design</td>
+            <td>dbms</td>
+            <td>os</td>
+        
+            <td>c-lang</td>
+            <td>python</td>
+            <td>english</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>drawing</td>
+            <td>english</td>
+            <td>library</td>
+        
+            <td>c-lang</td>
+            <td>html</td>
+            <td>web design</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>os</td>
+            <td>java</td>
+            <td>phy</td>
+        
+            <td>chemistry</td>
+            <td colspan="2">sports</td>
+        </tr>
+        
+
+
+    </table></tbody>
+
+</body>
+</html>
