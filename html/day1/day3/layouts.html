@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layouts</title>
+    <style>
+        .header{
+            padding:10px;
+            background-color:rgb(144, 73, 231);
+            text-align: center;
+        }
+        .nav{
+            background-color:darkgrey;
+            padding: 10px;
+        }
+        .nav li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .lside{  
+                 float: left;  
+               width: 80%;  
+               min-height: 440px;  
+               background-color: #f0f8ff;  
+               text-align: center;  
+              }  
+           .rside  
+           {  
+            text-align: center;  
+            float: right;  
+            width: 20%;  
+              min-height: 440px;  
+             background-color:  #c1cdcd;  
+           }  
+           .footer{
+               text-align: center;
+               background-color: bisque;
+               padding: 10px;
+           }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>welcome</h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li style="float:right;"><a href="#">LOGIN</a></li>
+            <li style="float: right;"><a href="#">SIGN UP</a></li>
+        </ul>
+    </div>
+    <div style="height: 440px ;">
+        <div class="lside">
+            <p>write your content</p>
+        </div>
+        <div class="rside">
+            <p>about</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy
+            <b>copyright</b>
+        </p>
+    </div>
+</body>
+</html>
