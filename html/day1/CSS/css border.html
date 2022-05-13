@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border</title>
+    <style>
+        .none{
+            border-style: none;
+            border-color:blanchedalmond;
+            border-width: 5px;
+            border-radius:5px;
+        }
+        .dotted{
+            border-style:dotted;
+            border-color:#8a2be2;
+            border-width: 5px;
+            border-radius:5px
+        }
+        .dashed{
+            border-style: dashed;
+            border-color:cadetblue;
+            border-width: 5px;
+            border-radius:5px;
+            
+        }
+        .soild{
+            border-style: solid;
+            border-color:coral;
+            border-width: 5px;
+            border-radius:5px;
+        }
+        .double{
+            border-style: double;
+            border-color:lightcoral;
+            border-width: 5px;
+            border-radius:5px;
+        }
+        .groove{
+            border-style:groove;
+            border-color:darkred;
+            border-width: 5px;
+            border-radius:2px;
+        }
+        .ridge{
+            border-style: ridge;
+            border-color:darkkhaki;
+            border-width: 5px;
+            border-top-right-radius:250px;
+            height: 200px;
+            width: 300px;
+
+        }
+        .inset{
+            border-style: inset;
+            border-color:deeppink;
+            border-width: 5px;
+            border-top-left-radius: 250px;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            background-color: bisque;
+        }
+        .outset{
+            border-style: outset;
+            border-color: aquamarine;
+            border-width: 10px;
+            border-radius:100px 2px 100px 2px;
+            height: 100px;
+            text-align: center;
+            width: 300px;
+            background-color: aquamarine;
+        }
+        div{
+            float: left;
+            padding: left;
+        }
+    </style>
+</head>
+<body>
+    <p class="none">NONE</p>
+    <p class="dotted">dotted</p>
+    <p class="dashed">dashed</p>
+    <p class="soild">soild</p>
+    <p class="double">double</p>
+    <p class="groove">groove</p>
+    <p class="ridge">ridge</p>
+    <div><p class="inset">inset</p>
+    <p class="outset">outset</p></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS margin</title>
+    <style>
+        p{
+            background-color: aqua;
+        }
+        .para{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin-right: 200px;
+            margin-left: 50px;
+        }
+        .mar{
+            border-style:groove;
+            border-color:rgb(183, 42, 42);
+            border-width: 7px solid black;
+            border-radius:2px;
+            margin: 100px 150px 50px 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>This paragraph is not displayed with specified margin. </p>  
+    <p class="para">This paragraph is displayed with specified margin.</p>  
+    <b class="mar">short hand</b>
+</body>
+</html>
