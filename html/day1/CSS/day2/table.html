@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tables</title>
+    <style>
+        table{
+            margin:auto auto auto auto;   
+        }
+        table,tr,td,th{
+                border: 2px solid black;
+                border-collapse: collapse;
+        }
+        th,tr{
+            padding: 10px;
+        }
+        table#alter tr:nth-child(odd){
+            background-color:azure;
+        }
+        table#alter tr:nth-child(even) {  
+            background-color:antiquewhite;  
+        }
+        table#alter th{
+                background-color: cadetblue;
+        }
+         
+    </style>
+</head>
+<body>
+    <table id="alter">
+        <tr>
+            <th>first name</th>
+            <th>second name</th>
+            <th>marks</th>
+        </tr>
+        <tr>
+            <td>mahesh</td>
+            <td>mitta</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>balaji</td>
+            <td>kuppam</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>girish</td>
+            <td>gundala</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td>vyshu</td>
+            <td>busyaku</td>
+            <td>99</td>
+        </tr>
+    </table>
+</body>
+</html>

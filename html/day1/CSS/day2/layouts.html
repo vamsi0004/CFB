@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layouts</title>
+    <style>
+        .container{
+            width:100%;
+        }
+        .left{
+            background-color: blueviolet;
+            float:left;
+            width: 15%;
+        }
+        .body{
+            background-color: burlywood;
+            float: left;
+            width: 70%;
+        }
+        .right{
+            background-color:chartreuse;
+            float: left;
+            width: 15%;
+        }
+        .header{
+            margin: -8px -8px 0px;
+            background-color: deeppink;
+            text-align: center;padding: 10px;
+            background-image: linear-gradient(145deg,#7379ff,#b524ef);
+            
+        }
+        .foot{
+            margin: -8px;
+            background-color: deeppink;
+            text-align: center;padding: 10px;
+            background-image: linear-gradient(145deg,#7379ff,#b524ef);
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div><p class="header">header</p></div>
+    <div class="container">
+    <div class="left">
+    <p>left page</p>
+    </div>
+    <div class="body">
+    <p>body</p>
+    <p>body</p>
+    <p>body</p>
+    <p>body</p>
+    <p>body</p>
+    <p>body</p>
+    <p>body</p>
+    </div>
+    <div>
+    <div class="right">
+    <p>right page</p>
+    </div>
+    </div>
+    <div class="foot">
+        <p>Footer</p>
+    </div>
+</body>
+</html>
