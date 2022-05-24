@@ -6,7 +6,7 @@ class LifecycleB extends Component {
       super(props)
     
       this.state = {
-         name :'mahesh'
+         name :'Vamsi'
         
       }
       console.log('LifecycleB constructor') 
