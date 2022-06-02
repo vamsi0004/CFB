@@ -1,0 +1,8 @@
+nodifi;lnhfv;l,ffm dejclo
+Enter the value of n
+5
+ Q  -  -  -  - 
+ -  -  -  Q  - 
+ -  Q  -  -  - 
+ -  -  -  -  Q 
+ -  -  Q  -  - 
