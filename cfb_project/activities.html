@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Free Bharat - Activities</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light background color */
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+            margin-top: 100px; /* Add margin to push content below the fixed header */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Dark background color for the header */
+            color: #fff; /* Text color for the header */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+        }
+
+        .logo img {
+            width: 80px; /* Adjust the logo size */
+            height: 80px; /* Make it square */
+            border-radius: 50%; /* Make it circular */
+        }
+
+        .sanskrit-quote {
+            font-size: 30px; /* Increase font size */
+            font-style: italic;
+            color: #ff6600; /* Change text color to orange */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f00; /* Red button color on hover */
+            color: #fff; /* Text color on hover */
+        }
+
+        /* Add your custom CSS styles here */
+        .activity {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .activity h2 {
+            font-size: 24px; /* Increase font size for activity titles */
+        }
+
+        .activity p {
+            font-size: 18px; /* Increase font size for activity descriptions */
+        }
+
+        .activity img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center-align images */
+        }
+
+        /* Scrolling Text Section */
+        .scrolling-text {
+            background-color: #ff0000; /* Red background color */
+            color: #fff; /* White text color */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+        .scrolling-text p {
+            display: inline-block;
+            white-space: nowrap;
+            margin-left: 100%; /* Start text offscreen */
+            animation: scrollText 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        @keyframes scrollText {
+            0% { margin-left: 100%; }
+            100% { margin-left: -100%; }
+        }
+
+        /* Scrolling Logos Section */
+        .scrolling-logos {
+            background-color: #333; /* Dark background color for the logos section */
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+        .logo-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: scrollLogos 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        .logo-list a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .logo-list img {
+            width: 150px; /* Increase the size of the logos */
+            height: 150px; /* Increase the size of the logos */
+            object-fit: contain;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes scrollLogos {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="logo">
+    <a href="m.html"><img src="https://media.licdn.com/dms/image/C4E0BAQGH7Avd2XZbvw/company-logo_200_200/0/1619315847410?e=1703116800&v=beta&t=42_uHlyjcLCHk2RA6WNbDCLh0r0PHBuBK4JUCJjJnOU" alt="Logo"></a>
+</div>
+
+        </div>
+        <div class="sanskrit-quote">
+            "यत्र धर्मस्तत्र जयः"
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Complaints.html">Complaints</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Activity Sections -->
+
+    <div class="activity" id="awareness">
+        <h2>Awareness Campaigns</h2>
+        <p>Crime Free Bharat conducts awareness campaigns to educate communities about various types of crimes, their prevention, and the importance of safety measures. These campaigns aim to empower individuals with knowledge to protect themselves and their communities from criminal activities.</p>
+        <img src="https://newsroom24x7.files.wordpress.com/2020/07/maithili-sharan-gupta.jpg" alt="Awareness Campaigns">
+    </div>
+
+    <div class="activity" id="internship">
+        <h2>Internship Opportunities</h2>
+        <p>We offer internship opportunities for young individuals interested in learning about crime prevention and community safety. Our internship programs provide hands-on experience and mentorship, helping participants develop valuable skills to contribute to a safer society.</p>
+        <img src="https://www.endnowfoundation.org/wp-content/uploads/2021/05/Internship.jpg" alt="Internship Opportunities">
+    </div>
+
+    <div class="activity" id="cybercrime">
+        <h2>Helping Cybercrime Victims</h2>
+        <p>Crime Free Bharat assists individuals who have fallen victim to cybercrimes by offering support, resources, and guidance. We work to help victims recover from cyberattacks and raise awareness about online safety to prevent future incidents.</p>
+        <img src="https://www.coe.int/documents/8475493/106641330/CoE+Octopus+Offenders+and+Victims.jpg/76e831c8-f5ff-e37c-e408-a7fdf5c69f2d?t=1632133913000" alt="Helping Cybercrime Victims">
+    </div>
+
+    <div class="activity" id="youth-education">
+        <h2>Educating Youth</h2>
+        <p>We are committed to educating the youth about different types of crimes, their consequences, and the importance of making safe choices. Through workshops, seminars, and educational programs, we empower young individuals to become responsible citizens.</p>
+        <img src="https://soodcharityfoundation.org/wp-content/uploads/2022/07/EDUCATION-EMPOWER-YOUTH-TO-BECOME-TOMORROWS-LEADERS.png" alt="Educating Youth">
+    </div>
+
+    <div class="activity" id="helping-needy">
+        <h2>Helping the Needy</h2>
+        <p>Crime Free Bharat extends a helping hand to those in need within our communities. We support disadvantaged individuals and families by providing essential resources, including food, clothing, and shelter, to help them lead better lives.</p>
+        <img src="https://roshnisanstha.com/wp-content/uploads/2021/03/27332371_766175553575797_1788374963337123771_n.jpg" alt="Helping the Needy">
+    </div>
+
+    <div class="activity" id="guidance">
+        <h2>Providing Guidance</h2>
+        <p>Our organization offers efficient guidance and support to people seeking assistance related to crime prevention. We connect individuals with experts and resources to help them navigate complex issues and make informed decisions to enhance their safety.</p>
+        <img src="https://image.slidesharecdn.com/leadershippart1-140730193814-phpapp02/85/leadership-part-1-19-320.jpg?cb=1666207213" alt="Providing Guidance">
+    </div>
+
+    <!-- Scrolling Text Section -->
+    <div class="scrolling-text">
+        <p>
+            There will be a radical change in the rules and regulations made for the slaves of the British. The British imperial, cruel and exploitative system will be made transparent and accountable with provision of compensation. The Indian Education Act will be replaced by the Indian Gurukul Act, which will establish India as a world guru using Vedic knowledge and modern science. Crime-free India with five sureties: A. Without going to the police station, an FIR will also be registered by the poor and resourceless person of the village. B. Challan will be presented in a maximum of 15 days with irrefutable proofs (with the help of CFB Techno Engine) in 15 days. C. Punishment will be ensured in a maximum of 30 days without going to court (by distributed video-based trial system). D. The Digital Chitra Gupta's 360° information about every criminal and through smart intervention action, most of the criminals can be arrested before committing the crime. E. The system itself will reach out to the criminals and rehabilitate them for sure. India will be cybercrime-free with an assured digital identity of a person and act. Partyless democracy and expenseless election system will be established by radical changes in the Public Representation Act 1950/51 (using the app, and spending will be a cognizable offense). There will be separation of political executive and legislature. (The ministers will no longer be dependent on the grace of the Chief Minister or the Prime Minister and all will complete their five-year tenure). Paper currency-free and tax-free India (Tax-Free India). With the concentration of thought and action, there will be a drug-free, vegetarian, and spiritual India.
+        </p>
+    </div>
+
+    <!-- Scrolling Logos Section -->
+    <div class="scrolling-logos">
+        <div class="logo-list">
+            <a href="https://selfregistration.cowin.gov.in/"><img src="https://www.criai.in/images/covid.png" alt="Logo 1"></a>
+            <a href="https://skillindia.gov.in/"><img src="https://www.criai.in/bottom-slider/skill-india.png" alt="Logo 2"></a>
+            <a href="https://www.makeinindia.com/home"><img src="https://www.criai.in/bottom-slider/make-in-india.png" alt="Logo 3"></a>
+            <a href="https://wcd.nic.in/bbbp-schemes"><img src="https://www.criai.in/bottom-slider/Beti_Bachao_Beti_Padhao.jpg" alt="Logo 4"></a>
+            <a href="https://kvnewsindia.in/"><img src="https://www.criai.in/bottom-slider/kv-news-india.png" alt="Logo 5"></a>
+            <a href="https://www.digitalindia.gov.in/"><img src="https://www.criai.in/bottom-slider/digital-india.png" alt="Logo 6"></a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact Us: <a href="mailto:ContactCrimeFreeBharat@Gmail.Com">ContactCrimeFreeBharat@Gmail.Com</a></p>
+    </footer>

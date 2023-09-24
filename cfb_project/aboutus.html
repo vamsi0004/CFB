@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Free Bharat - About Us</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light background color */
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Dark background color for the header */
+            color: #fff; /* Text color for the header */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+        }
+
+        .logo img {
+            width: 80px; /* Adjust the logo size */
+            height: 80px; /* Make it square */
+            border-radius: 50%; /* Make it circular */
+        }
+
+        .sanskrit-quote {
+            font-size: 30px; /* Increase font size */
+            font-style: italic;
+            color: #ff6600; /* Change text color to orange */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f00; /* Red button color on hover */
+            color: #fff; /* Text color on hover */
+        }
+
+        /* Content container */
+        .content-container {
+            margin-top: 100px; /* Add margin to push content below the fixed header */
+            padding: 20px;
+            background-color: #fff; /* White background color for content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .founder {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Circular shape for the founder image */
+        .founder-image {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        /* Updated founder's name styles */
+        .founder p {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Scrolling Text Section */
+        .scrolling-text {
+            background-color: #ff0000; /* Red background color */
+            color: #fff; /* White text color */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+        .scrolling-text p {
+            display: inline-block;
+            white-space: nowrap;
+            margin-left: 100%; /* Start text offscreen */
+            animation: scrollText 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        @keyframes scrollText {
+            0% { margin-left: 100%; }
+            100% { margin-left: -100%; }
+        }
+
+        /* Scrolling Logos Section */
+        .scrolling-logos {
+            background-color: #333; /* Dark background color for the logos section */
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+        .logo-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: scrollLogos 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        .logo-list a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .logo-list img {
+            width: 150px; /* Increase the size of the logos */
+            height: 150px; /* Increase the size of the logos */
+            object-fit: contain;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes scrollLogos {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <a href="m.html"><img src="https://media.licdn.com/dms/image/C4E0BAQGH7Avd2XZbvw/company-logo_200_200/0/1619315847410?e=1703116800&v=beta&t=42_uHlyjcLCHk2RA6WNbDCLh0r0PHBuBK4JUCJjJnOU" alt="Logo"></a>
+</div>
+
+        <div class="sanskrit-quote">
+            "यत्र धर्मस्तत्र जयः"
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Updated link to homepage -->
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Complaints.html">Complaints</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content-container">
+        <h2>About Us</h2>
+        <p>
+            Crime Free Bharat (श्रेष्ठ, आत्मनिर्भर, अपराध मुक्ति संस्था) is a national initiative led by Maithili Sharan Gupta IPS, the former DGP of Police Reforms and MP. Our mission is to reduce crimes to a drastic minimum in India through a five-pronged strategy.
+        </p>
+        <ul>
+            <li>Certainty of registration of FIR</li>
+            <li>Certainty of Detection with 21 technologies</li>
+            <li>Certainty of Conviction with digital and non-digital evidence</li>
+            <li>Certainty of Prevention through police and community volunteers</li>
+            <li>Certainty of Rehabilitation of criminals</li>
+        </ul>
+        
+        <div class="founder">
+            <h3>Founder</h3>
+            <img class="founder-image" src="https://bsidesmaharashtra.com/attachments/2020/11/IPS-MAITHILI-SHARAN.jpeg" alt="Maithili Sharan Gupta IPS">
+            <p>Maithili Sharan Gupta IPS, President CFB India</p>
+        </div>
+
+        <!-- Additional information about the founder -->
+        <h3>Founder's Background</h3>
+        <p>
+            Experienced Director General with a demonstrated history of working in the law enforcement industry. Skilled in Operations Management, Analytical Skills, Microsoft Word, Government, and Team Building. Strong military and protective services professional with a M Tech focused in Industrial Engineering from Indian Institute of Technology, Delhi. At present, I am working on seven projects which may change the capability of India.
+        </p>
+        <h3>Projects</h3>
+        <ol>
+            <li>Automated Investigation Support System with use 21 technologies to pave the way to Crime Free India</li>
+            <li>Empowering railway passengers through Integrated All India GRP Help App Suite (Reporting App, Supervisory App, Responder/Investigator App, Railway Stakeholders Help App, Railway Passenger Volunteer App) with a powerful web-based response monitoring and investigation support system.</li>
+            <li>State Disaster Command, Response, and Monitoring System to create a disaster-capable and resilient India using a predictive, proactive warning system, mobilizing local resources, shifting populations under risk to safer locations, using the period for infotainment and capacity building.</li>
+            <li>Automated data, information, and document requisitioning and assimilation System</li>
+            <li>Making road travel safer, minimizing death in accidents to 50% through black spot identification and spot-specific resolution and using 3 Es (Engineering, Education, and Enforcement)</li>
+            <li>Automated Investigation System for unearthing and smashing networks of drug and narcotics mafia and ensuring the total demolition of the network along with its distribution network.</li>
+            <li>Automated Investigation System for unearthing networks of illicit arms mafia and ensuring the total demolition of the network along with the distribution network</li>
+            <li>Automated Investigation Support System for unearthing networks of human trafficking mafia and ensuring the total demolition of the network.</li>
+        </ol>
+    </div>
+    
+    <!-- Scrolling Text Section -->
+    <div class="scrolling-text">
+        <p>
+            There will be a radical change in the rules and regulations made for the slaves of the British. The British imperial, cruel and exploitative system will be made transparent and accountable with provision of compensation. The Indian Education Act will be replaced by the Indian Gurukul Act, which will establish India as a world guru using Vedic knowledge and modern science. Crime-free India with five sureties: A. Without going to the police station, an FIR will also be registered by the poor and resourceless person of the village. B. Challan will be presented in a maximum of 15 days with irrefutable proofs (with the help of CFB Techno Engine) in 15 days. C. Punishment will be ensured in a maximum of 30 days without going to court (by distributed video-based trial system). D. The Digital Chitra Gupta's 360° information about every criminal and through smart intervention action, most of the criminals can be arrested before committing the crime. E. The system itself will reach out to the criminals and rehabilitate them for sure. India will be cybercrime-free with an assured digital identity of a person and act. Partyless democracy and expenseless election system will be established by radical changes in the Public Representation Act 1950/51 (using the app, and spending will be a cognizable offense). There will be separation of political executive and legislature. (The ministers will no longer be dependent on the grace of the Chief Minister or the Prime Minister and all will complete their five-year tenure). Paper currency-free and tax-free India (Tax-Free India). With the concentration of thought and action, there will be a drug-free, vegetarian, and spiritual India.
+        </p>
+    </div>
+
+    <!-- Scrolling Logos Section -->
+    <div class="scrolling-logos">
+        <div class="logo-list">
+            <a href="https://selfregistration.cowin.gov.in/"><img src="https://www.criai.in/images/covid.png" alt="Logo 1"></a>
+            <a href="https://skillindia.gov.in/"><img src="https://www.criai.in/bottom-slider/skill-india.png" alt="Logo 2"></a>
+            <a href="https://www.makeinindia.com/home"><img src="https://www.criai.in/bottom-slider/make-in-india.png" alt="Logo 3"></a>
+            <a href="https://wcd.nic.in/bbbp-schemes"><img src="https://www.criai.in/bottom-slider/Beti_Bachao_Beti_Padhao.jpg" alt="Logo 4"></a>
+            <a href="https://kvnewsindia.in/"><img src="https://www.criai.in/bottom-slider/kv-news-india.png" alt="Logo 5"></a>
+            <a href="https://www.digitalindia.gov.in/"><img src="https://www.criai.in/bottom-slider/digital-india.png" alt="Logo 6"></a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact Us: <a href="mailto:ContactCrimeFreeBharat@Gmail.Com">ContactCrimeFreeBharat@Gmail.Com</a></p>
+    </footer>
+
+</body>
+</html>

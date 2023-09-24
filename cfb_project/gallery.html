@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Free Bharat - Gallery</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light background color */
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Dark background color for the header */
+            color: #fff; /* Text color for the header */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease; /* Smooth background color transition */
+        }
+
+        .logo img {
+            width: 80px; /* Adjust the logo size */
+            height: 80px; /* Make it square */
+            border-radius: 50%; /* Make it circular */
+        }
+
+        .sanskrit-quote {
+            font-size: 30px; /* Increase font size */
+            font-style: italic;
+            color: #ff6600; /* Change text color to orange */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f00; /* Red button color on hover */
+            color: #fff; /* Text color on hover */
+        }
+
+        /* Content container */
+        .content-container {
+            margin-top: 100px; /* Add margin to push content below the fixed header */
+            padding: 20px;
+            background-color: #fff; /* White background color for content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gallery section */
+        .gallery {
+            margin-top: 20px;
+            text-align: center; /* Center-align the content */
+        }
+
+        .video-container {
+            max-width: 75%; /* 75% of the screen width */
+            margin: 0 auto 20px; /* Center videos and add spacing */
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px; /* Adjust the height as needed */
+        }
+
+        .video-description {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Scrolling Text styles */
+        .scrolling-text {
+            background-color: #ff0000; /* Red background color */
+            color: #fff; /* White text color */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+        .scrolling-text p {
+            display: inline-block;
+            white-space: nowrap;
+            margin-left: 100%; /* Start text offscreen */
+            animation: scrollText 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        @keyframes scrollText {
+            0% { margin-left: 100%; }
+            100% { margin-left: -100%; }
+        }
+
+        /* Scrolling Logos styles */
+        .scrolling-logos {
+            background-color: #333; /* Dark background color for the logos section */
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+        .logo-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: scrollLogos 20s linear infinite; /* Adjust animation speed as needed */
+        }
+
+        .logo-list a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .logo-list img {
+            width: 150px; /* Increase the size of the logos */
+            height: 150px; /* Increase the size of the logos */
+            object-fit: contain;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes scrollLogos {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <a href="m.html"><img src="https://media.licdn.com/dms/image/C4E0BAQGH7Avd2XZbvw/company-logo_200_200/0/1619315847410?e=1703116800&v=beta&t=42_uHlyjcLCHk2RA6WNbDCLh0r0PHBuBK4JUCJjJnOU" alt="Logo"></a>
+</div>
+
+        </div>
+        <div class="sanskrit-quote">
+            "यत्र धर्मस्तत्र जयः"
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Updated link to homepage -->
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="Complaints.html">Complaints</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content-container">
+        <h2>Gallery</h2>
+        <div class="gallery" id="gallery">
+            <!-- Video 1 -->
+            <div class="video-container">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/ZxrP_SgcB9w?si=8WLimFlAfSVYVpRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-description">
+                    Maithili Sharan Gupta IPS explaining "Crime Free Bharat" along with its prime objective and vision during NLIU, Bhopal webinar.
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-container">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/BIAB42ich94?si=ixb1oq32Y2auvUrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-description">
+                    Sample Video 2 Description
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-container">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/YNEVHmzi-0s?si=IRs6FAkASjmVFTJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-description">
+                    Sample Video 3 Description
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-container">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/xRsk7YSCIQE?si=0IFdHvfNdvOaWgS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-description">
+                    Sample Video 4 Description
+                </div>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="video-container">
+                <iframe width="560" height="450" src="https://www.youtube.com/embed/UF8usoKsDwc?si=HdbW1FFjCASPozWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-description">
+                    Sample Video 5 Description
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scrolling Text Section -->
+    <div class="scrolling-text">
+        <p>
+            There will be a radical change in the rules and regulations made for the slaves of the British. The British imperial, cruel and exploitative system will be made transparent and accountable with provision of compensation. The Indian Education Act will be replaced by the Indian Gurukul Act, which will establish India as a world guru using Vedic knowledge and modern science. Crime-free India with five sureties: A. Without going to the police station, an FIR will also be registered by the poor and resourceless person of the village. B. Challan will be presented in a maximum of 15 days with irrefutable proofs (with the help of CFB Techno Engine) in 15 days. C. Punishment will be ensured in a maximum of 30 days without going to court (by distributed video-based trial system). D. The Digital Chitra Gupta's 360° information about every criminal and through smart intervention action, most of the criminals can be arrested before committing the crime. E. The system itself will reach out to the criminals and rehabilitate them for sure. India will be cybercrime-free with an assured digital identity of a person and act. Partyless democracy and expenseless election system will be established by radical changes in the Public Representation Act 1950/51 (using the app, and spending will be a cognizable offense). There will be separation of political executive and legislature. (The ministers will no longer be dependent on the grace of the Chief Minister or the Prime Minister and all will complete their five-year tenure). Paper currency-free and tax-free India (Tax-Free India). With the concentration of thought and action, there will be a drug-free, vegetarian, and spiritual India.
+        </p>
+    </div>
+
+    <!-- Scrolling Logos Section -->
+    <div class="scrolling-logos">
+        <div class="logo-list">
+            <a href="https://selfregistration.cowin.gov.in/"><img src="https://www.criai.in/images/covid.png" alt="Logo 1"></a>
+            <a href="https://skillindia.gov.in/"><img src="https://www.criai.in/bottom-slider/skill-india.png" alt="Logo 2"></a>
+            <a href="https://www.makeinindia.com/home"><img src="https://www.criai.in/bottom-slider/make-in-india.png" alt="Logo 3"></a>
+            <a href="https://wcd.nic.in/bbbp-schemes"><img src="https://www.criai.in/bottom-slider/Beti_Bachao_Beti_Padhao.jpg" alt="Logo 4"></a>
+            <a href="https://kvnewsindia.in/"><img src="https://www.criai.in/bottom-slider/kv-news-india.png" alt="Logo 5"></a>
+            <a href="https://www.digitalindia.gov.in/"><img src="https://www.criai.in/bottom-slider/digital-india.png" alt="Logo 6"></a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact Us: <a href="mailto:ContactCrimeFreeBharat@Gmail.Com">ContactCrimeFreeBharat@Gmail.Com</a></p>
+    </footer>
+</body>
+</html>
