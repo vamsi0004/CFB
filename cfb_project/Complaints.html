@@ -180,9 +180,7 @@
 <body>
     <header>
         <div class="logo">
-    <a href="m.html"><img src="https://media.licdn.com/dms/image/C4E0BAQGH7Avd2XZbvw/company-logo_200_200/0/1619315847410?e=1703116800&v=beta&t=42_uHlyjcLCHk2RA6WNbDCLh0r0PHBuBK4JUCJjJnOU" alt="Logo"></a>
-</div>
-
+            <a href="m.html"><img src="https://media.licdn.com/dms/image/C4E0BAQGH7Avd2XZbvw/company-logo_200_200/0/1619315847410?e=1703116800&v=beta&t=42_uHlyjcLCHk2RA6WNbDCLh0r0PHBuBK4JUCJjJnOU" alt="Logo"></a>
         </div>
         <div class="sanskrit-quote">
             "यत्र धर्मस्तत्र जयः"
@@ -204,10 +202,10 @@
         <div class="complaints" id="complaints">
             <form class="complaint-form" action="#" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Only alphabets and spaces are allowed" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required>
 
                 <label for="complaint">Complaint:</label>
                 <textarea id="complaint" name="complaint" rows="4" required></textarea>
